@@ -28,7 +28,7 @@ public class AristocatsServlet extends HttpServlet {
     duchess.put("photoUrl", "https://static.wikia.nocookie.net/disney/images/e/eb/Profile_-_Duchess.jpeg");
     aristocats.add(duchess);
 
-    RequestDispatcher dispatcher = req.getRequestDispatcher("/views/aristocats/index-jstl.jsp");
+    RequestDispatcher dispatcher = req.getRequestDispatcher("/views/aristocats/index.jsp");
     dispatcher.forward(req, resp);
   }
 }
