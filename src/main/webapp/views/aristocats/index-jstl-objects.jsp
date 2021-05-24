@@ -11,14 +11,10 @@
   <title>Aristocats in Tomcat</title>
   </head>
   <body>
-    <h1>All of our Cats</h1>
-
-    <%
-      List<Map<String, String>> aristocatsData = (List)request.getAttribute("aristocatsJspVariable");
-      for(Map<String, String> cat : aristocatsData) {
-    %>
-      <h2><%= cat.get("firstName") %> <%= cat.get("lastName") %></h2>
-      <img src=<%= cat.get("photoUrl") %> />
-    <% } %>
+    <h1>All of our Cats (in JSTL!)</h1>
+    <c:forEach items="${requestScope.aristocatsJspVariable}" var="cat" >
+      <h2><c:out value="${cat.getFirstName()} ${cat.getLastName()}" /></h2>
+      <img src=<c:out value="${cat.photoUrl}" /> />
+    </c:forEach>
   </body>
 </html>
