@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aristocat-servlets.iml" filepath="$PROJECT_DIR$/aristocat-servlets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsp-donut-orders.iml" filepath="$PROJECT_DIR$/jsp-donut-orders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tomcat-aristocats.iml" filepath="$PROJECT_DIR$/tomcat-aristocats.iml" />
+    </modules>
+  </component>
+</project>
